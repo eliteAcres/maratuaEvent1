@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maratua Seaview Resort Home Page</title>
+    <link rel="stylesheet" href="styleHome.css">
+
+    <style>
+        .image-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            z-index: 0;
+        }
+
+        .big-image {
+            width: 45%;
+        }
+
+        #prevBtn,
+        #nextBtn {
+            position: absolute;
+            font-size: 20px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: #000;
+            z-index: 1; /* Set a higher z-index for buttons */
+        }
+
+        #prevBtn {
+            left: 5px;
+        }
+
+        #nextBtn {
+            right: 5px;
+        }
+
+        #prevBtn:hover,
+        #nextBtn:hover {
+            color: #106944;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Maratua Seaview Resort</h1>
+            <p>Where Diver Meets Marine Life</p>
+            <img src="images/maratua seaview resort logo.png" alt="Content">
+        </header>
+
+        <div class="image-container">
+            <button id="prevBtn">&#8249;</button>
+            <img id="image1" src="images/a1.jpg" alt="Image 1">
+            <button id="nextBtn">&#8250;</button>
+            <img id="image2" src="images/a2.jpg" alt="Image 2" class="big-image">
+            <img id="image3" src="images/a3.jpg" alt="Image 3">
+        </div>
+
+        <section class="main-content">
+            <h2>Experience Timeless Charm</h2>
+            <p>Discover the beauty that transcends generations.</p>
+
+            <div class="buttons-container">
+                <button class="charming-button" onclick="window.location.href='explore.html'">Explore</button>
+                <button class="charming-button" onclick="window.location.href='discover.html'">Discover</button>
+                <button class="charming-button" onclick="window.location.href='https://maratuaseaviewresort.com/'">Connect</button>
+                <button class="charming-button" onclick="window.location.href='forYou.html'">For You</button>
+            </div>
+        </section>
+
+    
+    </div>
+
+    <script src="scriptHome.js"></script>
+</body>
+</html>
+

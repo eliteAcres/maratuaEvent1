@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Crimson Text', serif;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Add this CSS rule to set the maximum width for the content logo */
+.container img {
+    max-width: 100%; /* Set the maximum width to 100% of the parent container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #d35400;
+    color: #fff;
+    border-top: 5px solid #c0392b;
+    width: 100%; /* Ensure the footer spans the entire width */
+    box-sizing: border-box; /* Include padding and border in total width */
+}
+
+
+
+
+
+
+
+header {
+    /*background: #52bedf;*/
+    background: rgb(229, 245, 249);
+    color: #106944;
+    padding: 20px;
+    /*border-bottom: 5px solid #59c9eb;*/
+}
+
+header h1 {
+    font-size: 2.0em;
+    margin: 0;
+}
+
+.main-content {
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.main-content h2 {
+    color: #c0392b;
+}
+
+/*
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+*/
+
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next row */
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px;
+}
+
+.charming-button {
+    margin: 0 10px;
+    margin: 5px; /* Add some margin between buttons for spacing */
+    padding: 15px 30px;
+    background: #2187c2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.charming-button:hover {
+    background: rgb(98, 9, 133);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #d35400;
+    color: #fff;
+    border-top: 5px solid #c0392b;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.image-container img.big-image {
+    width: 45%;
+    height: auto;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
