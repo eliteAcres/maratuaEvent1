@@ -34,3 +34,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Set up automatic rotation
     setInterval(rotateImages, 3000);
 });
+
