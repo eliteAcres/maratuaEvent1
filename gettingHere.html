@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROOM</title>
-    <link rel="stylesheet" href="styleDiscover.css">
+    <link rel="stylesheet" href="styleGettingHere.css">
     <style>
         /* General styles for the slideshow container and images */
         .slideshow-container {
             max-width: 800px; /* Set the maximum width of the container */
-            height: 400px; /* Set a fixed height for the container */
+            height: auto; /* Change from fixed height to auto */
             margin: auto;
             margin-top: 10px; /* Reduce top margin */
             overflow: hidden; /* Hide the overflow to keep images within the container */
@@ -19,14 +19,15 @@
         .mySlides {
             display: none;
             width: 100%; /* Make sure each slide takes the full width of the container */
-            height: 100%; /* Make sure each slide takes the full height of the container */
+            /*height: 100%;  --Make sure each slide takes the full height of the container */
             object-fit: cover; /* Ensure the entire image is visible, even if it's larger than the container */
         }
 
         .slideshow-container img {
             width: 100%; /* Make sure the images fill the available space within the slides */
             height: 100%;
-            object-fit: cover; /* Apply object-fit to the images as well */
+            /*object-fit: cover;  ---Apply object-fit to the images as well */
+            object-fit: contain; /* Change from cover to contain */
         }
 
         /* Styles for the title container and back button */
