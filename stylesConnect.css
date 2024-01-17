@@ -155,7 +155,7 @@ body {
 
     /* Add hover effect */
     &:hover {
-        background-color: #d3bb35; /* Darker green on hover */
+        background-color: #40e2c7; /* Darker green on hover */
     }
 
     /* Additional styles for larger screens if needed */
@@ -183,7 +183,7 @@ body {
 }
 
 
-#suggestButton {
+#websiteButton {
     margin-top: 20px; /* Add some space between the form button and other elements */
     padding: 10px 20px; /* Adjust padding for the form button */
     font-size: 14px; /* Reduce font size for the form button */
@@ -196,7 +196,7 @@ body {
 
     /* Add hover effect */
     &:hover {
-        background-color: #45a049; /* Darker green on hover */
+        background-color: #3685df; /* Darker green on hover */
     }
 
     /* Additional styles for larger screens if needed */
@@ -206,28 +206,6 @@ body {
     }
 }
 
-#googleButton {
-    margin-top: 20px; /* Add some space between the form button and other elements */
-    padding: 10px 20px; /* Adjust padding for the form button */
-    font-size: 14px; /* Reduce font size for the form button */
-    border-radius: 10px; /* Optional: Round the corners */
-    cursor: pointer; /* Add a pointer cursor on hover */
-    background-color: #4CAF50; /* Green background color */
-    color: white; /* White text color */
-    border: none; /* Remove border */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-
-    /* Add hover effect */
-    &:hover {
-        background-color: #45a049; /* Darker green on hover */
-    }
-
-    /* Additional styles for larger screens if needed */
-    @media (min-width: 768px) {
-        font-size: 16px; /* Increase font size for larger screens */
-        padding: 15px 30px; /* Adjust padding for larger screens */
-    }
-}
 
 
 

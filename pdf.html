@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="stylePdf.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #f0f0f0;
+            position: relative;
+            text-align: center; /* Center the content horizontally */
+        }
+
+        .homeButton {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 30px;
+            background-color: #d3bb35;
+            color: #116479;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            z-index: 1; /* Ensure the Home button appears above the PDF viewer */
+        }
+
+        .homeButton:hover {
+            background-color: #40e2c7;
+        }
+
+        .pdf-container {
+            width: 80%;
+            height: 80vh;
+            overflow: auto;
+            margin: auto;
+            margin-top: 100px; /* Adjust the spacing between the button and the PDF viewer */
+        }
+
+        #pdf-viewer {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .title-container {
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Home button -->
+    <button id="homeButton" class="homeButton">Home 首页</button>
+    <h1></h1>
+    <div class="pdf-container">
+        <!-- <iframe id="pdf-viewer" src="pdf/MaratuaSeaviewResort_Eng2024_January.pdf" frameborder="0"></iframe>-->
+        <a href="pdf/MaratuaSeaviewResort_Eng2024_January.pdf" target="_blank">Open PDF in New Tab</a>
+
+    </div>
+
+    <script src="scriptPdf.js"></script>
+</body>
+
+</html>

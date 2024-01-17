@@ -1,5 +1,5 @@
 
-
+// for rotating image
 document.addEventListener("DOMContentLoaded", function () {
     let currentImageIndex = 0;
     const imagePaths = ['a1.jpg', 'a2.jpg', 'a3.jpg', 'a4.jpg', 'a5.jpg', 'a6.jpg', 'a7.jpg', 'a8.jpg', 'a9.jpg', 'a10.jpg', 'a11.jpg', 'a12.jpg', 'a13.jpg', 'a14.jpg'];
@@ -34,4 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Set up automatic rotation
     setInterval(rotateImages, 3000);
 });
+
+
 

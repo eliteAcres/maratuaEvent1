@@ -23,28 +23,23 @@ body {
     height: auto; /* Maintain aspect ratio */
 }
 
-.footer {
-    text-align: center;
-    padding: 20px;
-    background: #d35400;
-    color: #fff;
-    border-top: 5px solid #c0392b;
-    width: 100%; /* Ensure the footer spans the entire width */
-    box-sizing: border-box; /* Include padding and border in total width */
+
+.header-image {
+    max-width: 100%; /* Set the maximum width to 100% of its container */
+    height: 20px; /* Set a fixed height or adjust as needed */
+    display: block; /* Remove any extra spacing below the image */
+    margin: 0 auto; /* Center the image horizontally */
 }
-
-
-
-
 
 
 header {
     /*background: #52bedf;*/
     background: rgb(229, 245, 249);
     color: #106944;
-    padding: 20px;
+    padding: 10px; /* Adjust padding as needed */
     /*border-bottom: 5px solid #59c9eb;*/
 }
+
 
 header h1 {
     font-size: 2.0em;
@@ -60,41 +55,66 @@ header h1 {
 }
 
 .main-content h2 {
-    color: #c0392b;
+    color: #aa8d0e;
 }
 
 /*
 .buttons-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
 }
 */
 
-
 .buttons-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap to the next row */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /* flex-wrap: wrap; Allow buttons to wrap to the next row */
     justify-content: center; /* Center the buttons horizontally */
-    margin-top: 20px;
+    margin-top: 20px; /* Adjust the margin as needed */
 }
 
+
+
+
 .charming-button {
-    margin: 0 10px;
     margin: 5px; /* Add some margin between buttons for spacing */
-    padding: 15px 30px;
+    padding: 10px 20px; /* Adjust padding as needed */
     background: #2187c2;
     color: #fff;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px; /* Adjust font size as needed */
     transition: background 0.3s ease;
+    flex-grow: 1; /* Add this property to make all buttons grow equally */
+    box-sizing: border-box; /* Add this property to include padding and border in the button's total width */
 }
+
+
+
+@media (max-width: 600px) {
+    .charming-button {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .charming-button img {
+        width: 100%; /* Make the images fill the button width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+
 
 .charming-button:hover {
     background: rgb(98, 9, 133);
+    transform: scale(1.1);
 }
+
 
 footer {
     text-align: center;
@@ -103,6 +123,9 @@ footer {
     color: #fff;
     border-top: 5px solid #c0392b;
 }
+
+
+
 
 .image-container {
     display: flex;
